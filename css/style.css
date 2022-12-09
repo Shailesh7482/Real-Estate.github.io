@@ -1943,6 +1943,7 @@ Media Mobile responsive  start
 
     .main-heading-2 {
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .agent-content h3 {
