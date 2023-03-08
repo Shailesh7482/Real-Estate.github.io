@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstateAgency </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container-fulid m-auto  h-75  ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white  navbar-change  ">
+                <div class="container-fluid ">
+                    <div class="navbar-heading-menu">
+                        <div class="toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="main-logo">
+                            <a class="navbar-brand   " href="#" id="main-logo">Estate<span
+                                    class="logo">Agency</span></a>
+                        </div>
+                        <div class="navbar-main-links">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  fs-3 " id="nav-ul">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" aria-current="page" href="index.html"
+                                        >Home</a>
+                                </li>
+                                <li class="nav-item main-li">
+                                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="property.html">Property</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pages <span class="mx-2"><i class="fa-solid fa-caret-down "></i></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown  " id="drowp-page">
+                                        <li><a class="dropdown-item" href="#">Property Single</a></li>
+                                        <li><a class="dropdown-item" href="#">Blog-Single</a></li>
+                                        <li><a class="dropdown-item" href="#">Blog-Single</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item" id="contact-a">
+                                    <a class="nav-link active" aria-current="page" href="contact.html"id="active">Contact</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <form class="d-flex search-click">
+                            <div class="click">
+                                <div class="click">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <aside>
+                        <div class="navLinks">
+                            <div class="container">
+                                <div class="main-heading-form-inside ">
+                                    <div class="aside-heading">
+                                        <h1 class=""> Search Property</h1>
+                                        <div class="close-icon">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="main-form-section">
+                                    <form>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Keyword</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Keyword">
+
+                                        </div>
+                                    </form>
+
+                                    <div class="sectct-inside">
+
+                                        <div class="col-md-6">
+                                            <label for="validationCustom04" class="form-label">Type</label>
+                                            <select class="form-select select-1" id="validationCustom04" required>
+                                                <option selected disabled value="">All Type</option>
+                                                <option>All Type</option>
+                                                <option>For Rent</option>
+                                                <option>For Sale</option>
+                                                <option>Open House</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select a valid state.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom04" class="form-label">City</label>
+                                            <select class="form-select select-2 " id="validationCustom04" required>
+                                                <option selected disabled value="">All City </option>
+                                                <option>All City</option>
+                                                <option>Mumbai</option>
+                                                <option>Delhi</option>
+                                                <option>Pune</option>
+                                                <option>Bhopal</option>
+                                                <option>Banglore</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select a valid City.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sectct-inside">
+
+                                        <div class="col-md-6">
+                                            <label for="validationCustom04" class="form-label">Bedrooms</label>
+                                            <select class="form-select select-1" id="validationCustom04" required>
+                                                <option selected disabled value="">Any</option>
+                                                <option>Any</option>
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select a valid Bedrooms.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom04" class="form-label">Garages</label>
+                                            <select class="form-select select-2 " id="validationCustom04" required>
+                                                <option selected disabled value="">01 </option>
+                                                <option>01 </option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select a valid Garages.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sectct-inside">
+
+                                        <div class="col-md-6">
+                                            <label for="validationCustom04" class="form-label">Bathrooms</label>
+                                            <select class="form-select select-1" id="validationCustom04" required>
+                                                <option selected disabled value="">Any</option>
+                                                <option>Any</option>
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                                <option>04</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select a valid Bathrooms.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationCustom04" class="form-label">Min Price</label>
+                                            <select class="form-select select-2 " id="validationCustom04" required>
+                                                <option selected disabled value="">Price</option>
+                                                <option>Unlimite</option>
+                                                <option>$50,000</option>
+                                                <option>$100,000</option>
+                                                <option>$150,000</option>
+                                                <option>$200,000</option>
+
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select a valid Min Price.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn-submit">Search Property</button>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+                    </aside>
+                </div>
+        </div>
+        </nav>
+        </div>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="second-primery-section d-flex">
+                            <div class="second-primery-heding">
+                                <h1>Contact </h1>
+                                <p class="contact-para">
+                                    Aut voluptas consequatur unde sed omnis ex placeat quis eos. Aut natus officia
+                                    corrupti qui autem fugit consectetur quo. Et ipsum eveniet laboriosam voluptas
+                                    beatae possimus qui ducimus. Et voluptatem deleniti. Voluptatum voluptatibus amet.
+                                    Et esse sed omnis inventore hic culpa.
+                                </p>
+                            </div>
+                            <div class="second-primery-para text-end">
+                                <a href="index.html">Home </a><span>/Contact</span>
+                            </div>
+
+                        </div>
+                    </div>
+        </section>
+        <section class="map-section">
+            <div class="container">
+                <div class="main-map-section">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1839486564004!2d-73.98773128554802!3d40.75797874274001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sin!4v1670144205767!5m2!1sen!2sin"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+            <div class="contact-from-section">
+                <div class="container">
+                    <div class="row" id="form-section-start-row">
+                        <div class="col-lg-7 col-md-7  col-sm-10">
+                            <div class="form-section-start">
+                                <form>
+                                    <div class="main-from-group">
+                                        <div class="form-group-1">
+                                            <input type="text" placeholder="Your Name">
+                                        </div>
+                                        <div class="form-group-2">
+                                            <input type="email" placeholder="Your Email">
+                                        </div>
+                                    </div>
+                                    <div class="from-gourp-3">
+                                        <input type="text" placeholder="Subject">
+                                        <br>
+                                        <textarea cols="30" rows="10" placeholder="Meassage"></textarea>
+                                    </div>
+
+                                    <div class="form-btn">
+                                        <button type="button" class="btn btn-dark">Send Meassage</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5  col-sm-10">
+                            <div class="contact-address">
+                                <div class="main-address d-flex">
+                                    <div class="contact-icons">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                    <div class="text-address">
+                                        <h2>
+                                            Say Hello</h2>
+                                    </div>
+
+                                </div>
+                                <p><span>Email:</span> Sp822754@gamil.com <br>
+                                    <span> Phone:</span> 9136239302
+                                </p>
+
+                            </div>
+                            <div class="contact-address">
+                                <div class="main-address d-flex">
+                                    <div class="contact-icons">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="text-address">
+                                        <h2>
+                                            Find us in</h2>
+                                    </div>
+
+                                </div>
+                                <p> Manhattan, Nueva York 10036, <br>
+                                    EE.UU</p>
+
+                            </div>
+                            <div class="contact-address">
+                                <div class="main-address d-flex">
+                                    <div class="contact-icons">
+                                        <i class="bi bi-share"></i>
+                                    </div>
+                                    <div class="text-address">
+                                        <h2>
+                                            Social Networks</h2>
+                                    </div>
+
+                                </div>
+                                <div class="address-contact-icons">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row footer-row">
+                    <div class="col-lg-4  footer-col-1">
+                        <div class="footer-logo">
+                            <h3><a href="#">EstateAgency</a></h3>
+                        </div>
+                        <div class="footer-content">
+                            <p>Enim minim veniam quis nostrud <br> exercitation ullamco laboris nisi ut aliquip <br>
+                                exea
+                                commodo
+                                consequat duis sed aute <br> irure.</p>
+                            <h4> <span>Phone</span> : 9136239302</h4>
+                            <h4> <span>Gmail</span>: Sp822754@gmail.com</h4>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 footer-col-1">
+                        <div class="footer-logo">
+                            <h3><a href="#">The Company</a></h3>
+                        </div>
+                        <div class="footer-item-list">
+                            <ul>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Site Map</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Legal</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span>Agent Admin</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Careers</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Affiliate</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-4 footer-col-1">
+                        <div class="footer-logo">
+                            <h3><a href="#">International sites</a></h3>
+                        </div>
+                        <div class="footer-item-list">
+                            <ul>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Venezuela</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> China</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Hong Kong</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Argentina</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Singapore</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Philippines</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-copyright-section ">
+                            <ul class="d-flex ">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="property.html">Property</a></li>
+                                <li><a href="blog.html"> Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="footer-copyright-text">
+                            <h3>© Copyright <span>EstateAgency</span> All Rights Reserved.</h3>
+                            <h4>Designed by <span>ShaiLeshpaWar</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+
+        <script src="js/jquery-3.6.1.min.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+
+
+
+        <script src="js/custom.js"></script>
+
+</body>
+
+</html>

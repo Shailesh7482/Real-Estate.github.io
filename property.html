@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstateAgency </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container-fulid m-auto  h-75  ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white  navbar-change  ">
+                <div class="container-fluid ">
+                    <div class="navbar-heading-menu">
+                        <div class="toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                       <div class="main-logo">
+                        <a class="navbar-brand   " href="#" id="main-logo">Estate<span class="logo">Agency</span></a>
+                       </div>
+                       <div class="navbar-main-links">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0  fs-3 " id="nav-ul">
+                            <li class="nav-item ">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item main-li">
+                                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="property.html" id="active">Property</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages <span class="mx-2"><i class="fa-solid fa-caret-down "></i></span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown  " id="drowp-page">
+                                    <li><a class="dropdown-item" href="#">Property Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog-Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog-Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" id="contact-a">
+                                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                            </li>
+                           
+                        </ul>
+                       </div>      
+                        <form class="d-flex search-click">
+                            <div class="click">
+                                <div class="click">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+    
+                        <aside>
+                            <div class="navLinks">
+                                <div class="container">
+                                    <div class="main-heading-form-inside ">
+                                        <div class="aside-heading">
+                                            <h1 class=""> Search Property</h1>
+                                            <div class="close-icon">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="main-form-section">
+                                        <form>
+
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Keyword</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" placeholder="Keyword">
+
+                                            </div>
+                                        </form>
+
+                                        <div class="sectct-inside">
+
+                                            <div class="col-md-6">
+                                                <label for="validationCustom04" class="form-label">Type</label>
+                                                <select class="form-select select-1" id="validationCustom04" required>
+                                                    <option selected disabled value="">All Type</option>
+                                                    <option>All Type</option>
+                                                    <option>For Rent</option>
+                                                    <option>For Sale</option>
+                                                    <option>Open House</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid state.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationCustom04" class="form-label">City</label>
+                                                <select class="form-select select-2 " id="validationCustom04" required>
+                                                    <option selected disabled value="">All City </option>
+                                                    <option>All City</option>
+                                                    <option>Mumbai</option>
+                                                    <option>Delhi</option>
+                                                    <option>Pune</option>
+                                                    <option>Bhopal</option>
+                                                    <option>Banglore</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid City.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sectct-inside">
+
+                                            <div class="col-md-6">
+                                                <label for="validationCustom04" class="form-label">Bedrooms</label>
+                                                <select class="form-select select-1" id="validationCustom04" required>
+                                                    <option selected disabled value="">Any</option>
+                                                    <option>Any</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid Bedrooms.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationCustom04" class="form-label">Garages</label>
+                                                <select class="form-select select-2 " id="validationCustom04" required>
+                                                    <option selected disabled value="">01 </option>
+                                                    <option>01 </option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid Garages.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sectct-inside">
+
+                                            <div class="col-md-6">
+                                                <label for="validationCustom04" class="form-label">Bathrooms</label>
+                                                <select class="form-select select-1" id="validationCustom04" required>
+                                                    <option selected disabled value="">Any</option>
+                                                    <option>Any</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid Bathrooms.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationCustom04" class="form-label">Min Price</label>
+                                                <select class="form-select select-2 " id="validationCustom04" required>
+                                                    <option selected disabled value="">Price</option>
+                                                    <option>Unlimite</option>
+                                                    <option>$50,000</option>
+                                                    <option>$100,000</option>
+                                                    <option>$150,000</option>
+                                                    <option>$200,000</option>
+
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid Min Price.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn-submit">Search Property</button>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                        </aside>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="second-primery-section d-flex">
+                            <div class="second-primery-heding">
+                                <h1>Our Amazing Properties </h1>
+                                <p class="fs-4 my-3">Grid Properties</p>
+                            </div>
+                            <div class="second-primery-para text-end">
+                                <a href="index.html">Home </a><span>/Properties Grid</span>
+
+
+
+                                <div class="property-select">
+                                    <select class="form-select form-select-sm  " aria-label=".form-select-sm example" id="property-form-option">
+                                        <option value="1">All</option>
+                                        <option value="2">New to Old</option>
+                                        <option value="3">For Sale</option>
+                                        <option value="4">For Rent</option>
+                                    </select>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>  
+        </section>
+        <section class="property-gallery">
+            <div class="container">
+                <div class="row" id="property-gallery-main">
+                    <div class="col-lg-4 col-md-6  col-sm-10">
+                        <div class="property-gallery-section">
+                            <div class="property-before-img">
+                                <img src="img/property-1.jpg" alt="">
+                            </div>
+                           
+                            <div class="property-inside-content" id="inside-content-1">
+                                <h2>206 Mount <br>
+                                    Olive Road Two
+                                </h2>
+                                <div class="inside-btn">
+                                    <h4><span class="">Rent | $ 12.000</span></h4>
+                                </div>
+                                <div class="property-click">
+                                    <h3>Click here to view <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    </h3>
+                                </div>
+                             
+                            </div>
+                            <div class="property-inside-deatail d-flex">
+                                <div class="dea-1">
+                                    <h4>Area</h4>
+                                    <h5>340 <sup>2</sup></h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Beds</h4>
+                                    <h5>2</h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Baths</h4>
+                                    <h5>4 </h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Grageas</h4>
+                                    <h5>1</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  col-sm-10">
+                        <div class="property-gallery-section">
+                            <div class="property-before-img">
+                                <img src="img/property-3.jpg" alt="">
+                            </div>
+                            <div class="property-inside-content" id="inside-content-1">
+                                <h2>206 Mount <br>
+                                    Olive Road Two
+                                </h2>
+                                <div class="inside-btn">
+                                    <h4><span class="">Rent | $ 12.000</span></h4>
+                                </div>
+                                <div class="property-click">
+                                    <h3>Click here to view <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    </h3>
+                                </div>
+                             
+                            </div>
+                            <div class="property-inside-deatail d-flex">
+                                <div class="dea-1">
+                                    <h4>Area</h4>
+                                    <h5>340 <sup>2</sup></h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Beds</h4>
+                                    <h5>2</h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Baths</h4>
+                                    <h5>4 </h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Grageas</h4>
+                                    <h5>1</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  col-sm-10">
+                        <div class="property-gallery-section">
+                            <div class="property-before-img">
+                                <img src="img/property-6.jpg" alt="">
+                            </div>
+                            <div class="property-inside-content" id="inside-content-1">
+                                <h2>206 Mount <br>
+                                    Olive Road Two
+                                </h2>
+                                <div class="inside-btn">
+                                    <h4><span class="">Rent | $ 12.000</span></h4>
+                                </div>
+                                <div class="property-click">
+                                    <h3>Click here to view <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    </h3>
+                                </div>
+                             
+                            </div>
+                            <div class="property-inside-deatail d-flex">
+                                <div class="dea-1">
+                                    <h4>Area</h4>
+                                    <h5>340 <sup>2</sup></h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Beds</h4>
+                                    <h5>2</h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Baths</h4>
+                                    <h5>4 </h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Grageas</h4>
+                                    <h5>1</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  col-sm-10">
+                        <div class="property-gallery-section">
+                            <div class="property-before-img">
+                                <img src="img/property-7.jpg" alt="">
+                            </div>
+                            <div class="property-inside-content" id="inside-content-1">
+                                <h2>206 Mount <br>
+                                    Olive Road Two
+                                </h2>
+                                <div class="inside-btn">
+                                    <h4><span class="">Rent | $ 12.000</span></h4>
+                                </div>
+                                <div class="property-click">
+                                    <h3>Click here to view <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    </h3>
+                                </div>
+                             
+                            </div>
+                            <div class="property-inside-deatail d-flex">
+                                <div class="dea-1">
+                                    <h4>Area</h4>
+                                    <h5>340 <sup>2</sup></h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Beds</h4>
+                                    <h5>2</h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Baths</h4>
+                                    <h5>4 </h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Grageas</h4>
+                                    <h5>1</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6  col-sm-10">
+                        <div class="property-gallery-section">
+                            <div class="property-before-img">
+                                <img src="img/property-8.jpg" alt="">
+                            </div>
+                            <div class="property-inside-content" id="inside-content-1">
+                                <h2>206 Mount <br>
+                                    Olive Road Two
+                                </h2>
+                                <div class="inside-btn">
+                                    <h4><span class="">Rent | $ 12.000</span></h4>
+                                </div>
+                                <div class="property-click">
+                                    <h3>Click here to view <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    </h3>
+                                </div>
+                             
+                            </div>
+                            <div class="property-inside-deatail d-flex">
+                                <div class="dea-1">
+                                    <h4>Area</h4>
+                                    <h5>340 <sup>2</sup></h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Beds</h4>
+                                    <h5>2</h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Baths</h4>
+                                    <h5>4 </h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Grageas</h4>
+                                    <h5>1</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  col-sm-10">
+                        <div class="property-gallery-section">
+                            <div class="property-before-img">
+                                <img src="img/property-10.jpg" alt="">
+                            </div>
+                            <div class="property-inside-content" id="inside-content-1">
+                                <h2>206 Mount <br>
+                                    Olive Road Two
+                                </h2>
+                                <div class="inside-btn">
+                                    <h4><span class="">Rent | $ 12.000</span></h4>
+                                </div>
+                                <div class="property-click">
+                                    <h3>Click here to view <span><i class="fa-solid fa-chevron-right"></i></span>
+                                    </h3>
+                                </div>
+                             
+                            </div>
+                            <div class="property-inside-deatail d-flex">
+                                <div class="dea-1">
+                                    <h4>Area</h4>
+                                    <h5>340 <sup>2</sup></h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Beds</h4>
+                                    <h5>2</h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Baths</h4>
+                                    <h5>4 </h5>
+                                </div>
+                                <div class="dea-1">
+                                    <h4>Grageas</h4>
+                                    <h5>1</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row footer-row">
+                    <div class="col-lg-4  footer-col-1">
+                        <div class="footer-logo">
+                            <h3><a href="#">EstateAgency</a></h3>
+                        </div>
+                        <div class="footer-content">
+                            <p>Enim minim veniam quis nostrud <br> exercitation ullamco laboris nisi ut aliquip <br>
+                                exea
+                                commodo
+                                consequat duis sed aute <br> irure.</p>
+                            <h4> <span>Phone</span> : 9136239302</h4>
+                            <h4> <span>Gmail</span>: Sp822754@gmail.com</h4>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 footer-col-1">
+                        <div class="footer-logo">
+                            <h3><a href="#">The Company</a></h3>
+                        </div>
+                        <div class="footer-item-list">
+                            <ul>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Site Map</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Legal</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span>Agent Admin</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Careers</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Affiliate</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-4 footer-col-1">
+                        <div class="footer-logo">
+                            <h3><a href="#">International sites</a></h3>
+                        </div>
+                        <div class="footer-item-list">
+                            <ul>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Venezuela</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> China</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Hong Kong</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Argentina</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Singapore</a></li>
+                                <li> <a href="#"> <span><i class="bi bi-chevron-right"></i></span> Philippines</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-copyright-section ">
+                            <ul class="d-flex ">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="property.html">Property</a></li>
+                                <li><a href="blog.html"> Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="footer-copyright-text">
+                            <h3>© Copyright <span>EstateAgency</span> All Rights Reserved.</h3>
+                            <h4>Designed by <span>ShaiLeshpaWar</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+
+        <script src="js/jquery-3.6.1.min.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+
+
+
+        <script src="js/custom.js"></script>
+
+</body>
+
+</html>
